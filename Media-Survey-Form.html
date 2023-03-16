@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Favorite Piece of Media Survey!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+  <body>
+    <h1 id="title">Favorite Piece of Media Survey!</h1>
+    <p id="description"> Take this short survey to share what your favorite piece of media is.
+     
+
+ <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Enter your first name: <input type="text" id="name" placeholder="Paige" required/></label>
+          <label for="email" id="email-label"> Email address: <input type="email" id="email" placeholder="book@library.com" required/></label>
+        </fieldset>
+
+        <fieldset>
+          <label for="number" id="number-label">How many pieces of media have you consumed in the last two months? (Example: books, movies, video games, etc.) <input type="number" id="number" min="0" max="20" placeholder="1" /></label>
+        </fieldset>
+
+        <fieldset>
+          <label for="dropdown">What is your favorite type of media?
+            <select id="dropdown">
+              <option value="">(Select One)</option>
+              <option value="1">Books</option>
+              <option value="2">Movies</option>
+              <option value="3">Video Games</option>
+              <option value="4">TV Shows</option>
+              <option value="5">Music</option>
+              <option value="6">Board Games</option>
+              <option value="7">Podcasts</option>
+              <option value="8">Magazines</option>
+              <option value="8">Newspapers</option>
+              <option value="10">Radio Broadcasts</option>
+              <option value="11">Other</option>
+            </select>
+        </fieldset>
+
+        <fieldset><label>What was the name of the last piece of media you consumed?</label>
+          <textarea rows="1" cols="65" placeholder="Undertale" id="last-media" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <label for="likelihood">
+            How likely is it that you would recommend the last piece of media you consumed to someone else?</label>
+            <label for="very-likely"><input type="radio" id="very-likely" name= "likelihood" value="very-likely"/> Very likely</label>
+            <label for="somewhat-likely"><input type="radio" id="somewhat-likely" name="likelihood" value="somewhat-likely"/> Somewhat likely</label>
+            <label for="not-likely"><input type="radio" id="not-likely" name="likelihood" value="not-likely"/> Not likely</label>
+            <label for="very-unlikely"><input type="radio" id="very-unlikely" name="likelihood" value="very-unlikely"/> Very unlikely</label>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="media"> Which of these types of media would you consider consuming if a friend recommended it? </label>
+          <label for="books"><input type="checkbox" name="media" id="books" value="book"/> Books</label>
+          <label for="movies"><input type="checkbox" name="media" id="movies" value="movies" /> Movies</label>
+          <label for="video-games"><input type="checkbox" name="media" id="video-games" value="video-games"/> Video Games</label>
+          <label for="tv-shows"><input type="checkbox" name="media" id="tv-shows" value="tv-shows"/> TV Shows</label>
+          <label for="music"><input type="checkbox" name="media" id="music" value="media"/> Music</label>
+          <label for="board-games"><input type="checkbox" name="media" id="board-games" value="board-games"/> Board Games</label>
+          <label for="podcasts"><input type="checkbox" name="media" id="podcasts" value="podcasts"/> Podcasts</label>
+          <label for="magazines"><input type="checkbox" name="media" id="magazines" value="magazine"/> Magazines</label>
+          <label for="newspapers"><input type="checkbox" name="media" id="newspapers" value="newspapers"/> Newspapers</label>
+          <label for="radio-broadcasts"><input type="checkbox" name="media" id="radio-broadcasts" value="radio-broadcasts"/> Radio Broadcasts</label>
+          <label for="other"><input type="checkbox" name="media" id="other" value="other"/> Other</label>
+        </fieldset>
+
+        <fieldset>
+          <label for="comment"> Any addditional comments or suggestions? </label>
+          <textarea id="comment" rows="5" cols="65" placeholder="Type your comment/suggestion here..."></textarea>
+        </fieldset>
+
+        <fieldset>
+          <input type="submit" value="Submit Response" id="submit"/>
+        </fieldset>
+      </form>
+  </body>
+
+
+
+
